@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Attributes</title>
+        <!--syntax: <tagName attr="value">Content</tagName> -->
+        <style>
+            .sampleClass {
+                color: green;
+                font-family: Consolas, monospace;
+                font-style: italic;
+            }
+
+            #sampleId {
+                color: red;
+                font-weight: bold;
+            }
+
+            .divStyle {
+                display: inline-block;
+                border: 1px solid black;
+                padding: 10px;
+            }
+        </style>
+    </head>
+<!--some global attribute: can be applied for any element-->
+    <body>
+<!--    style="" : inline CSS style-->
+    <div class="divStyle">
+        <article>
+<!--         class and id-->
+            <header><h2>class / id attribute.</h2></header>
+            <p class="sampleClass">paragraph with class="sampleClass"</p>
+            <p id="sampleId">paragraph with id="sampleId"</p>
+        </article>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="divStyle">
+<!--        href: hyperlink reference-->
+        <a href="https://www.geeksforgeeks.org/html-attributes/">
+<!--            src: media source (ULRs)
+                alt: alternative text to display when src can't be reached (cant load image from src)-->
+            <img src="https://www.lifewire.com/thmb/Hv2X69p_Hs9EK4lQqHnHrqQbYWc=/1280x632/filters:fill(auto,1)/dicaprio3-583e33155f9b58d5b19e3a00.jpg" alt="a meme" height="100px">
+            <!-- width, height: adjust the size of image-->
+            click here to see more about "HTML Attributes"
+        </a>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="divStyle">
+<!--        tabIndex: determines the order of focus when press tab keyword
+            value: -1 for never be focused, 0: Default order (after tabIndex>0-element be focused) -->
+        <p tabindex="1">press tab to focus to me</p>
+        <p tabindex="2">tab again to focus to me</p>
+        <p tabindex="-1">you cant focus me with tab</p>
+        <p tabindex="0">element with tabIndex=0 will be focus at last</p>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="divStyle">
+<!--        title: plaintext for element when mouse-icon hover to the element-->
+        <p class="sampleClass" title="let try to change two lines bellow.">hover me</p>
+<!--        contenteditable: "true"/"false"-->
+        <p contenteditable="true">let change this line</p>
+        <p contenteditable="false">this line can't be changed</p>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="divStyle">
+<!--        role: specifies the accessibility of element to Screen Reader-->
+        <p role="button" onclick="alert('Hello world!!!')">click me!</p>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="divStyle">
+        <h2 class="sampleClass">Input attributes</h2>
+<!--    type: type of input-data: text, email, password, number...
+        required: true/false
+        disabled: true/false
+        placeholder: suggestion text-->
+        <form>
+            <label>
+                <input type="text" placeholder="enter some word" required/>
+            </label>
+        </form>
+    </div>
+
+    <p style="color: green;"><b>See more: </b><a href="https://www.geeksforgeeks.org/html-attributes/">GeeksForGeeks</a></p>
+    </body>
+</html>

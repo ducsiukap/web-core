@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html> <!--root element-->
+
+<!--comment
+in 
+html-->
+
+    <!--head tag: define how element display-->
+    <head>
+        <title>Page title</title>
+        <style>
+            #div1 {
+                position: absolute;
+                color:  yellow;
+                background-color: red;
+                font-size: 50px;
+            }
+        </style><!--to embed CSS styles -> style of element-->
+
+        <script> 
+            let prevX, prevY;
+            let clicked = false;
+            function mouseClick(event) {
+                clicked = true;
+                prevX = event.pageX;
+                prevY = event.pageY;
+            }
+            function mouseUp(event) { clicked = false; }
+            function mouseMove(event) {
+                if (clicked) {
+                    var e = document.getElementById("div1");
+                    e.style.left = (e.offsetLeft + (event.pageX - prevX)) + "px";
+                    e.style.top = (e.offsetTop + (event.pageY - prevY)) + "px";
+
+                    prevX = event.pageX;
+                    prevY = event.pageY;
+                }
+            }
+        </script><!--to embed Javascript (for logic)-->
+    </head> 
+
+    <!--body: what display on screen-->
+    <body>
+        <div id="div1" 
+        onmousedown="mouseClick(event);" 
+        onmousemove="mouseMove(event);"
+        onmouseup="mouseUp(event);"
+        >Move</div>  <!--element-->
+
+        <p>HelloWorld</p>
+    </body>
+
+
+</html>

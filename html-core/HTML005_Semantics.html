@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Semantics</title>
+        <meta charset="utf-8">
+        <style>
+            div {
+                background-color: #8fd9c4;
+                border: 1px solid black;
+            }
+            #header {
+                color: #3c7363;
+            }
+
+            #main {
+                display: flexbox;
+                margin-left: 170px;
+                padding: 10px;
+
+            }
+
+            #nav {
+                color: #3c7363;
+                font-weight: bold;
+            }
+
+            #aside {
+                display: flexbox;
+                position: absolute;
+                width: 150px;
+                height: fit-content;
+                color: #3c7363;
+                font-style: italic;
+            }
+
+            article {
+                border: 0.5px solid green;
+                padding: 5px;
+                color: green;
+            }
+            
+            section {
+                border: 0.5px solid blue;
+                padding: 5px;
+                color: blue;
+            }
+
+        </style>
+    </head>
+
+    <body style="background-color: #b8d9d0;">
+        <div id="header">
+            <header>
+                <h1 style="font-size: 30; font-weight: bold; text-align: center;" >HTML sematics</h1>
+                <p style="font-size: 10; color: black; text-align: right;">&ltheader&gttag</p>
+            </header>
+        </div>
+        <br />
+        <div id="nav">
+            <p>Reference:&nbsp&nbsp&nbsp&nbsp&nbsp
+                <a href="https://www.geeksforgeeks.org/html5-semantics/" target="_blank">Geeksforgeeks</a>
+                &nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp
+                <a href="https://www.freecodecamp.org/news/semantic-html5-elements/" target="_blank">freeCodeCamp</a>
+                &nbsp&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp
+                <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank">W3School</a>
+                <p style="font-size: 10; color: black; text-align: right;">&ltnav&gttag</p>
+            </p>
+        </div>
+        <br />
+        <div id="aside">
+            <ul >
+                <li>&ltheader&gt</li>
+                <li>&ltnav&gt</li>
+                <li>&ltaside&gt</li>
+                <li>&ltmain&gt</li>
+                <li>&ltsection&gt</li>
+                <li>&ltarticle&gt</li>
+                <li>&ltdetails&gt</li>
+                <li>&ltsumary&gt</li>
+                <li>&ltfigure&gt</li>
+                <li>&ltfigcaption&gt</li>
+                <li>&ltmark&gt</li>
+                <li>&ltheader&gt</li>
+            </ul>
+            <p style="font-size: 10; text-align: right;">&ltaside&gttag</p>
+        </div>
+
+        <div id="main">
+            <div>
+            <article>
+                <h4>Hello World in C++</h4>
+                <figure style="border: 0.5px solid red; color: red;"><code>
+                    #include &ltiostream&gt
+                    <br />int main() {
+                    <br />&nbsp&nbsp&nbsp&nbspstd::cout &lt&lt "Hello World!" &lt&lt sdt::endl;
+                    <br />&nbsp&nbsp&nbsp&nbspreturn 0;
+                    <br />}</code>
+                    <figcaption style="font-size: 10px; color: red;">HelloWorld program in C++</figcaption>
+                    <p style="font-size: 10; text-align: right;">&ltfigure&gttag</p></figure>
+                <p style="font-size: 10; text-align: right;">&ltarticle&gttag</p>
+            </article>
+            </div>
+            <br />
+            <div>
+                <section>
+                    <h4>Hello World in other programming languages:</h4>
+                    <article>
+                        <details>
+                            <summary>Python:</summary>
+                            <code>print("Hello World!")</code>
+                            <p style="font-size: 10; color: black; text-align: right;">&ltdetails&gttag</p>
+                        </details>
+                        <p style="font-size: 10; text-align: right;">&ltarticle&gttag</p>
+                        </article><br />
+                    <article>
+                        <details>
+                            <summary>Java:</summary>
+                            <code>
+                                public class HelloWorld {<br />
+                                &nbsp&nbsp&nbsp&nbsppublic staic void main(String [] args) {<br />
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println("HelloWorld!");
+                                &nbsp&nbsp&nbsp&nbsp} <br />}
+                            </code>
+                            <p style="font-size: 10; text-align: right;">&ltdetails&gttag</p>
+                        </details>
+                        <p style="font-size: 10; text-align: right;">&ltarticle&gttag</p>
+                    </article>
+                    <p style="font-size: 10; text-align: right;">&ltsection&gttag</p>
+                </section>
+            </div>
+            <p style="font-size: 10; text-align: right;">&ltmain&gttag</p>
+        </div>
+
+        <br>
+
+        <div>
+            <footer>
+                <p>&copyvduczz</p>
+                <p style="font-size: 10; color: black; text-align: right;">&ltfooter&gttag</p>
+            </footer>
+        </div>
+    </body>
+</html>
