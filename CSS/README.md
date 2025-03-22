@@ -1,1 +1,0 @@
-<h3>To run a file, let's change <i>fileName.css<i> in <mark>&gtlink .... href="fileName.css"> in the <head><mark> tag of index.html

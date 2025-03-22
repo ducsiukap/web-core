@@ -1,0 +1,52 @@
+header {
+    font-size: 30px;
+    color: rebeccapurple;
+    text-align: center;
+}
+section {
+    background-color: honeydew;
+    border: 1px solid violet;
+}
+
+div {
+    background-color: lightgoldenrodyellow;
+}
+/* Combinators */
+/* Descendant Selectors: a b {} -> target to all <b> in the <a>*/
+div .descendant {
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+/* Child Selector: a > b {} -> applies only to direct child <b> of <a> */
+div > .child {
+    color: green;
+    font-style: italic;
+    font-weight: bold;
+}
+/* Adjacent sibling selectors: a + b {} -> áp dụng cho <b> nếu tồn tại <b> ngay sau <a> và cùng cấp với <a> */
+div + .adjacent {
+    color: blue;
+    font-style: italic;
+    font-weight: bold;
+}
+/* General sibling selector: a ~ b {} -> áp dụng cho tất cả <b> phía sau <a> và cùng cấp với <a> */
+div ~ .sibling {
+    color: purple;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/* Attribute selector */
+/* syntax: selector[attrName] {} => target to selector has non-empty attrName*/
+/* syntax: selector[attrName=value] {} => target to selector has specified attrName
+    attr=value: const value
+    attr^=value: attr start with value
+    attr*=value: attr contain value*/
+a[href] {
+    color: brown;
+}
+a[href*="geeksforgeek"] {
+    color: green;
+}

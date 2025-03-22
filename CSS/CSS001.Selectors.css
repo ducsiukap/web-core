@@ -1,0 +1,59 @@
+/* syntax 
+    selector {
+        properties: values;
+    }
+*/
+
+/* Universal Selector: selector=* => applies to all unstyled-elements */
+* {
+    font-family: Consolas, monospace;
+    font-size: 15px;
+}
+
+/* Type elector: selector=element => applies to the specified elector*/
+body {
+    background-color: aliceblue;
+}
+div {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/* class selector: selector= .className */
+.title {
+    font-weight: bold;
+    color: green;
+    font-size: 20px;
+}
+.content {
+    font-size: 15px;
+}
+
+
+/* id selector: selector= #id */
+#p1 {
+    color: red;
+}
+
+/*  Grouping selector: some element has the same style */
+h1, h2, h3, header {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+/* Pseudo-classes: styling base on state(behavior, position,...) of class 
+    syntax: selector:pseudoclasses {}*/
+button:hover, .psClass:hover { /* applied when hover the button*/
+    font-size: 1em+10px; 
+    font-weight: bold;
+    color: red;
+}
+
+/* Pseudo-elements: styling to specified properties of element */
+.psEle::first-line {
+    color:red;
+    font-style: italic;
+}

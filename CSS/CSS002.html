@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head><link rel="stylesheet" href="CSS002.CombinatorsAndAttributesSelector.css"></head>
+    <body>
+        <section>
+            <header>Descendant</header>
+            <p style="text-align: center; font-size: 10px;">div .descentdant {}</p>
+            <p style="text-align: center; font-size: 10px;">all element below this line has class=descendant</p>
+            <p class="descendant">This line is not inside div</p>
+            <div>
+                <p class="descendant">This line is direct child of div</p>
+                <article><p class="descendant">This line is not a direct child of div but insize the div</p></article>
+            </div>
+            <p class="descendant">This line is not inside div</p>
+        </section>
+        <br />
+        <section>
+            <header>Child</header>
+            <p style="text-align: center; font-size: 10px;">div .child {}</p>
+            <p style="text-align: center; font-size: 10px;">all element below this line has class=child</p>
+            <p class="child">This line is not inside div</p>
+            <div>
+                <p class="child">This line is direct child of div</p>
+                <article><p class="child">This line is not a direct child of div but insize the div</p></article>
+            </div>
+            <p class="child">This line is not inside div</p>
+        </section>
+        <br />
+        <section>
+            <header>Adjacent sibling</header>
+            <p style="text-align: center; font-size: 10px;">div .adjacent {}</p>
+            <p style="text-align: center; font-size: 10px;">all element below this line has class=adjacent</p>
+            <p class="adjacent">This line is not inside div</p>
+            <div>
+                <p class="adjacent">This line is direct child of div</p>
+                <article><p class="adjacent">This line is not a direct child of div but insize the div</p></article>
+            </div>
+            <p class="adjacent">This line is just under the div</p>
+            <p class="adjacent">This line is sibling of div but not is an adjacent</p>
+        </section>
+        <br />
+        <section>
+            <header>General sibling</header>
+            <p style="text-align: center; font-size: 10px;">div .sibling {}</p>
+            <p style="text-align: center; font-size: 10px;">all element below this line has class=sibling</p>
+            <p class="sibling">This line is not inside div</p>
+            <div>
+                <p class="sibling">This line is direct child of div</p>
+                <article><p class="sibling">This line is not a direct child of div but insize the div</p></article>
+            </div>
+            <p class="sibling">This line is just under the div</p>
+            <p>this line is sibling of div but no has class=sibling property</p>
+            <p class="sibling">This line is sibling of div but not is an adjacent</p>
+            <div>
+                <p class="sibling">This line has class=sibling attribute but is not a sibling of div</p>
+            </div>
+        </section>
+        <br />
+        <a>&lta&gt tag without href</a><br />
+        <a href="https://www.freecodecamp.org/news/learn-css/">freeCodeCamp.org</a><br />
+        <a href="https://www.geeksforgeeks.org/css-tutorial/">geeksforgeeks.org</a><br />
+    </body>
+</html>
