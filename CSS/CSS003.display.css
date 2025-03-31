@@ -1,0 +1,48 @@
+section {
+    background-color: lightgoldenrodyellow;
+    border: 1px solid black;
+    padding: 10px;
+}
+header {
+    font-size: 40px;
+    color: rebeccapurple;
+    text-align: center;
+}
+body { font-family: Consolas; }
+div { 
+    border: 1px solid black; 
+    color: white;
+    font-size: 20px;
+}
+
+/* display: none -> hide the content, does not take page space*/
+/* display: block -> take a new line + allow adjust size (width and height) (but occupy the entire line) */
+.block {
+    display: block;
+}
+/* display: inline -> dont take a new line + cant adjust size (autofit content) */
+.inline {
+    display: inline;
+}
+/* display: inline-block -> dont take a new line + allow adjust size */
+.inline-block {
+    display: inline-block;
+}
+/* display: flex -> flexible, 1D layout */
+.flex {
+    display: flex; /* biến tất cả các phần tử bên trong nó thành
+    flex items (ép kích thước) phù hợp với kích thước của nó */
+    /* one-dimensional layout: sắp xếp các phần tử trên 1 chiều duy nhất theo:
+    flex-dỉrection: row (default - ngang)
+    flex-direction: column (doc) */
+}
+/* display: grid -> grid layout, 2D layout */
+.grid {
+    display: grid; /*chia container thành các hàng và cột,
+    các phần tử sẽ được chứa trong mỗi ô*/
+    max-width: 500px;
+    gap: 10px; /* khoảng cách giữa các ô */
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+

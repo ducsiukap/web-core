@@ -1,0 +1,60 @@
+    <!DOCTYPE html>
+    <html>
+        <head><link rel="stylesheet" href="CSS003.display.css"></head>
+        <body>
+            <section> <!-- display: block-->
+                <header>display:block</header>
+                <div class="block" style="width: 250px; height: 150px; background-color: red;">display:block div, 
+                    <p style="font-size: 12px; font-style: italic;">width=250px, height=150px</p></div>
+                <div class="block" style="width: 300px; height: 100px; background-color: green;">display:block div, 
+                    <p style="font-size: 12px; font-style: italic;">width=300px, height=100px</p></div>
+
+                <p style="text-align: right;"><mark>new line + allow adjust size</mark></p>
+            </section>
+            <hr />
+            <section> <!-- display: inline-->
+                <header>display:inline</header>
+                <div class="inline" style="background-color: red;">display:inline div</div>
+                <div class="inline" style="background-color: green;">other display:inline div</div>
+
+                <p style="text-align: right;"><mark>inline + can't adjust size</mark></p>
+            </section>
+            <hr />
+            <section> <!-- display: inline-block -->
+                <header>display:inline-block</header>
+                <div class="inline-block" style="background-color: red; width:700px; height: 50px;">700x50px display:inline-block div</div>
+                <div class="inline-block" style="background-color: green; height: 300px;">300px-height display:inline-block div</div>
+                <div class="inline-block" style="background-color: blue; width: 400px; height: 20px;">400x400px display:inline-block div</div>
+                
+                <p style="text-align: right;"><mark>inline + allow adjust size</mark></p>
+            </section>
+            <hr />
+            <section> <!-- display: flex -->
+                <header>display:flex</header>
+                <div class="flex" style="width: 500px; height: 500px;"> <!--all element inside this div will be become flex items-->
+                    <div style="background-color: red;">default display:flex div</div>
+                    <div style="background-color: green; width:500px">500px-width <br /><mark style="font-size: 15px;">=> 500*500/(500 + 700 + size_div1)px</mark> display:flex div</div>
+                    <div style="background-color: blue; width: 700px; height: 400px;">700x400px display:flex div</div>
+                </div>
+                <p style="text-align: right;"><mark>flexible + one-dementional layout</mark></p>
+            </section>
+            <hr />
+            <section> <!-- display: grid -->
+                <header>display:grid</header>
+                <div class="grid" > 
+                    <div style="background-color: red; grid-column: span 2;">block 1</div>
+                    <div style="background-color: green;">block 2</div>
+                    <div>
+                        <p style="color: black; grid-row: span 2;">block 3</p>
+                        <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">see more about CSS Grid</a>
+                    </div>
+                    <div style="background-color: blue;">block 4</div>
+                </div>
+                <p style="text-align: right;"><mark>two-dementional layout</mark></p>
+            </section>
+
+            <p style="color: black">See more about CSS display: 
+                <a href="https://www.w3schools.com/cssref/pr_class_display.php" target="_blank"
+                style="color: green; font-style: italic; font-size: 25px;">W3School</a></p>
+        </body>
+    </html>

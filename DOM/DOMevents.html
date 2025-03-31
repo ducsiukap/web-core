@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>guess your number</title>
+        <style>
+            div {
+                font-family: 'Consolas';
+                font-size: 20px;
+                display: flex;
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p id="scoreBoard">your score: 0 | computer score: 0</p>
+            <label for="userNumber">Your number: 
+                <select id="userNumber" onchange="setUserNumber(event.target.value)">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </label>
+
+            <button style="width: fit-content;" id="btnCheck">Check</button>
+            <button style="width: fit-content;" id="btnReset">Reset</button>
+        </div>
+        <script src="./DOMevents.js"></script>
+    </body>
+</html>
