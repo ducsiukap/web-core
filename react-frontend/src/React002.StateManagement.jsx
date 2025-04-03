@@ -20,7 +20,9 @@ class MyComp extends React.Component {
         return(
             <div>
                 <label htmlFor="usrName">Your name</label>
-                <input type="text" value={this.state.value} id="usrName" onChange={(event)=>this.handleChange(event)}/>
+                <input type="text" value={this.state.value} id="usrName" onChange={(event) => this.handleChange(event)}/>
+                {/* or un-comment line 11
+                 <input type="text" value={this.state.value} id="usrName" onChange={this.handleChange}/>*/}
                 <h1 color="green">Hello {this.state.name}!!</h1>
             </div>
         )
